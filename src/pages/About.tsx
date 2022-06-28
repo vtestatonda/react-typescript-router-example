@@ -6,6 +6,7 @@ export interface IAboutPageProps {}
 const AboutPage: React.FunctionComponent<IAboutPageProps> = (props) => {
   const [message, setMessage] = useState("");
   const { number } = useParams();
+  //use the param that you put in the link: about/"param"
 
   useEffect(() => {
     if (number) {
